@@ -35,11 +35,11 @@ by hagre
 
 //WIFI settings
 #define YOUR_WIFI_SSID "TS115_WLAN"
-#define YOUR_WIFI_PASSWORD "TS115"
+#define YOUR_WIFI_PASSWORD "TS115_WLAN"
 #define YOUR_WIFI_HOSTNAME "AOG_Lightbar"
 #define PORT_TO_LISTEN 8888 // local port to listen for UDP packets
 #define UDP_PACKET_SIZE 1024
-#define MAX_WAIT_TIME_UDP 3000  //ms timeout for waiting on valide UDP msg
+#define MAX_WAIT_TIME_UDP 2000  //ms timeout for waiting on valide UDP msg
 
 //LED Settings
 #define NUMPIXELS   35                 // Odd number dont use =0 
@@ -53,6 +53,7 @@ by hagre
   #define MIN_LED_BRIGHTNESS 20 // 0-255
   #define MAX_LED_BRIGHTNESS 150 // 0-255
 #endif
+#include <FastLED.h>
 #define LED_TYPE WS2812B
 #define LED_COLOR_SETTING GRB
 #define LED_CORRECTION TypicalLEDStrip
@@ -65,7 +66,6 @@ by hagre
 //++++++++++++++++++++++++++++++++++++++++++++++++ END of CONFIG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #include <Arduino.h>
-#include <FastLED.h>
 #include <WiFi.h>
 #include <WiFiUDP.h>
 #include <SyncWifiConnectionESP32.h>
