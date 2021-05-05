@@ -9,8 +9,11 @@ AGOpenGPS Lightbar for WLAN/UDP connection with ESP32 and led strip ws2812b
 inspired by https://github.com/mnltake/AOGLightbar_M5stickC/blob/master/AOGLightbar_M5stickC_BT_v5_1.ino as well as parts of the code are copied and modified into this sketch
 
 do not forget to include Libraries:
+
 	https://github.com/hagre/VerySimpleTimer_Library.git
+
 	https://github.com/hagre/SyncWiFIConnectionESP32_Library.git
+	
 	fastled/FastLED@^3.4.0
 
 ESP32 firmware
