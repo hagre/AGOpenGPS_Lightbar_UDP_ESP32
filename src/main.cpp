@@ -114,6 +114,8 @@ void setup() {
   SyncWifiConnection.init (WIFI_STA, Node_IP, YOUR_WIFI_HOSTNAME, YOUR_WIFI_SSID, YOUR_WIFI_PASSWORD); 
 
   FastLED.addLeds<LED_TYPE ,Neopixel_Pin,LED_COLOR_SETTING>(leds, NUMPIXELS ).setCorrection(LED_CORRECTION);
+  lastLEDUpdate = millis();
+
   delay (500);
 }
 
